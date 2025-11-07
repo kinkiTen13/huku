@@ -1,0 +1,71 @@
+/* style-screen1.css */
+
+/* 1. 基本設定と中央配置 */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center; 
+}
+
+/* 2. スマートフォン画面の枠（コンテナ） */
+.screen-container {
+    width: 375px; 
+    background-color: white;
+    padding: 20px; 
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 80vh; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* 3. 画面タイトル（「画面 1」）のスタイル */
+.screen-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px; 
+}
+
+/* 4. ボタン配置グリッド */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    width: calc(100% - 20px); 
+    max-width: 335px; 
+    padding: 0; 
+}
+
+/* 5. 各ボタンのデザイン */
+.grid-button {
+    /* リンクのデフォルト装飾を解除し、ボタン化する最も重要な部分 */
+    text-decoration: none;
+    color: #333;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    height: 60px; 
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px; 
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s;
+}
+
+.grid-button:hover {
+    background-color: #f4f4f4;
+}
